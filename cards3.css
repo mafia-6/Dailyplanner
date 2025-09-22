@@ -1,0 +1,83 @@
+ *{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+ }
+
+ .Container{
+    width: 100vw;
+    height:100vh;
+   background-color: rgb(122, 103, 24);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box1{
+    height: 600px;
+    width: 370px;
+    border: 2px solid black;
+    background-color: orange;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+      
+  }
+ #img1{
+    width:100%;
+    height: 40%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+p{
+    padding-left: 25px;
+    padding-right: 20px;
+
+}
+.Box2{
+    height: 10%;
+    width: 80%;
+    background-color: rgb(43, 126, 43);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+     align-items: center;
+}
+.Box3  {
+     height: 100%;
+     width: 80%;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    padding-left: 10px;
+}
+#img2{
+    height: 70%;
+    width: 20%;
+    /* border-radius: none; */
+    /* padding-left: 10px; */
+}
+.Box2 a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+#payment{
+    height: 7%;
+    width: 70%;
+    background-color: rgb(71, 146, 71);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+#cancelorder{
+    color: green ;
+    text-decoration: none;
+    font-weight: bold;
+}
