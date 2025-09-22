@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    background-color: black;
+    color:white;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  #selfcare {
+    /* resize: vertical; */
+    height: 18px;
+    width: 120px;
+  }
+  
+  table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+  
+  table th {
+    padding: 10px;
+    text-align: center;
+  }
+   table td {
+    
+    text-align: center;
+  }
+  
+ #selfCareSubcategories,#selfCareSubcategories td{
+  border: 1px solid  white;
+ }
+
+ #category1,#category1 th,#category1 td{
+  border: 1px solid  white;
+ }
+
+ #frequency{
+  width:100%;
+ }
+
+ #addRowBtn {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+ padding: 0px;
+}
+
+#addrow {
+  display: none;
+}
+
+#inputrow:hover + #addrow,
+#addrow:hover {
+  display: table-row;
+}

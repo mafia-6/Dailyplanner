@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planner Subcategory</title>
+  <link rel="stylesheet" href="planner.css" />
+</head>
+<body style="background-color:black">
+
+    
+    <!-- Category Table with Checkboxes -->
+    <table id="category1">
+      <tr>
+        <th>Categories</th>
+        <th>Choose</th>
+      </tr>
+      <tr>
+        <td>Self Care</td>
+        <td><input type="checkbox" id="selfCareCheckbox" onchange="showDropdown(this)"></td>
+      </tr>
+      <tr>
+        <td>Ibadah</td>
+        <td><input type="checkbox" class="categorycheckbox" onchange="showDropdown(this)"></td>
+      </tr>
+      <tr>
+        <td>Family/Relation</td>
+        <td><input type="checkbox" class="categorycheckbox" onchange="showDropdown(this)"></td>
+      </tr>
+      <tr>
+        <td>Home Chores</td>
+        <td><input type="checkbox" class="categorycheckbox" onchange="showDropdown(this)"></td>
+      </tr>
+      <tr>
+        <td>Study</td>
+        <td><input type="checkbox" class="categorycheckbox" onchange="showDropdown(this)"></td>
+      </tr>
+      <tr>
+        <td>Job/Business</td>
+        <td><input type="checkbox" class="categorycheckbox" onchange="showDropdown(this)"></td>
+      </tr>
+      <tr>
+        <td>Personal Development</td>
+        <td><input type="checkbox" class="categorycheckbox" onchange="showDropdown(this)"></td>
+      </tr>
+       <tr>
+        <td>Hobby</td>
+        <td><input type="checkbox" class="categorycheckbox" onchange="showDropdown(this)"></td>
+      </tr>
+       <tr>
+        <td>Others</td>
+        <td><input type="checkbox" class="categorycheckbox" onchange="showDropdown(this)"></td>
+      </tr>
+      <!-- Add more categories here if needed -->
+    </table>
+
+    <!-- Subcategory Section (Initially Hidden) -->
+      <div class="dropdownWrapper" style="display: none; overflow: hidden; transition: max-height 0.5s ease;">
+      <table class="Subcategories" style="display:none;">
+      <tr  >
+        <td>Subcategories</td>
+        <td>Urgent</td>
+        <td>Imp</td>
+        <td>Priority</td>
+        <td>Var Task</td>
+        <td>Recrr Task</td>
+        <td>Frequency</td>
+      </tr>
+      <tr class="inputrow">
+      <td><textarea id="selfcare" placeholder="facialcare"></textarea></td>
+       <td><input type="checkbox" id="urgent"> </td> 
+       <td><input type="checkbox" id="Imp"> </td> 
+       <td><input type="checkbox" id="Priority"> </td> 
+       <td><input type="checkbox" id="var task"> </td> 
+       <td><input type="checkbox" id="recrr task"> </td>  
+       <td><input type="number" id="frequency" min="1" max="6" placeholder="1-6" /></td>
+      </tr>
+      <tr class="addrow" ><td colspan="7" style="text-align: left;"><button class="addRowBtn" >+</button></td></tr>
+      <tr>
+        <td colspan="7">  <!-- Description Box -->
+        <textarea class="description" placeholder=`description your goal of self care for the week`></textarea>
+      </td>
+      </tr>   
+      </table>
+      </div>
+       
+
+  <script src="table.js"></script>
+</body>
+</html>
